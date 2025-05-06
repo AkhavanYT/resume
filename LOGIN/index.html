@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ثبت نام در سایت</title>
+    <link rel="icon" type="image/png" href="images/BARG.png">
+    <!-- <link rel="stylesheet" href="styles/app.css"> -->
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            border: none;
+            outline: none;
+            font-family: Dana;
+            font-size: 20px;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #00BB8C;
+        }
+
+        form {
+            background-color: #fff;
+            border-radius: 12px;
+            padding: 20px 28px;
+            width: 400px;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 100%;
+            border: 1px solid #ded9ee;
+            padding: 16px;
+            border-radius: 8px;
+            color: #1b1b1b;
+            display: block;
+            transition: 180ms ease-in border-color;
+        }
+
+        input::placeholder {
+            color: grey;
+            font-weight: 300;
+        }
+
+        input:focus {
+            border-color: #89888b;
+        }
+
+        button[type="submit"],
+        input[type="submit"] {
+            background-color: #2ed573;
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            display: block;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        img {
+            display: block;
+            width: 110px;
+            margin: 0 auto;
+            border-radius: 250px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="">
+        <img src="./images/profgod green.png" alt="Profile">
+        <br>
+        <div>
+            <input type="text" placeholder="نام مستعار" name="username" autofocus required>
+        </div>
+        <br>
+        <div>
+            <input type="email" placeholder="ایمیل" name="email" required>
+        </div>
+        <br>
+        <div>
+            <input type="password" placeholder="رمز عبور" name="password" maxlength="8" required>
+            <br>
+            <input type="password" placeholder="تکرار رمز عبور" name="password_confirm" maxlength="8" required>
+        </div>
+        <br>
+        <div>
+            <input type="checkbox" id="accept" name="accept_roles" required>
+            <label for="accept">شرایط و قوانین سایت <a href="#">اخوان</a> را میپذیرم</label>
+        </div>
+        <br>
+        <button type="submit">ثبت نام</button>
+        <!-- <input type="submit" value="ثبت نام"> -->
+    </form>
+
+</body>
+
+</html>
